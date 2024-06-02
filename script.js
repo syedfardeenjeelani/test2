@@ -13,6 +13,9 @@ const dots = document.querySelectorAll(".dot");
 const activeCard = document.querySelectorAll(".projectcard");
 let projectImg = document.getElementById("projectImg");
 
+const iagreeLabel = form.querySelector('label[for="iagree"]');
+const formContactUsBtn = form.querySelector(".formContactUsBtn");
+
 const imagess = images.length - 6;
 
 const activeDotSrc = "./assets/active-dot.png";
