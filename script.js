@@ -140,7 +140,8 @@ activeCard.forEach((el, index) => {
       activeCard[2].style.backgroundColor = "#F6F6F6";
     } else if (index === 1) {
       projectImg.src =
-        "https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:62beadb2-fac2-491b-90d9-5bc90d77ae70;revision=0?component_id=2719ca30-70a5-4501-b09b-b89f311ee379&api_key=CometServer1&access_token=1717266565_urn%3Aaaid%3Asc%3AUS%3A62beadb2-fac2-491b-90d9-5bc90d77ae70%3Bpublic_38a6562d067dd322a380b319a0f49a6cd2ba35eb";
+        " projectImg.src =
+        "./assets/lastbigimg.png";";
       activeCard[1].style.backgroundColor = "#FF3147";
       activeCard[0].style.backgroundColor = "#F6F6F6";
       activeCard[2].style.backgroundColor = "#F6F6F6";
