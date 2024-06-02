@@ -38,7 +38,7 @@ contactUsBtn.addEventListener("click", () => {
   setTimeout(() => {
     popUP = true;
     console.log(popUP);
-  });
+  },100);
 });
 console.log(modal.style.display === "block");
 
@@ -168,7 +168,7 @@ window.addEventListener("load", fixingImg);
 // Log the project image width
 console.log(projectImg.style.width);
 window.onclick = function (event) {
-  if (popUP && event.target !==  modal && event.target !== form && event.target !==  email && event.target !==  firstName && event.target !==  lastName && event.target !== iagree && event.target !== iagreeLabel && event.target !==  formContactUsBtn ) {
+  if (popUP === true && event.target !==  modal && event.target !== form && event.target !==  email && event.target !==  firstName && event.target !==  lastName && event.target !== iagree && event.target !== iagreeLabel && event.target !==  formContactUsBtn ) {
     modal.style.display = "none";
     popUP = false;
   }
