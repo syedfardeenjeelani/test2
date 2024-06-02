@@ -685,6 +685,9 @@
     width: 416px;
     height: 567px;
   }
+  .projectimg{
+    width: 380px
+  }
   .projectsHeading {
     text-align: center;
   }
