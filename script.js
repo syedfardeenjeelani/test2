@@ -30,19 +30,17 @@ const img3 = document.getElementById("img3").src;
 // to remove automatic sliding
 let autoSlideInterval = null;
 
-let popUP = false
+let popUP = false;
 
 // Show modal on button click
 contactUsBtn.addEventListener("click", () => {
   modal.style.display = "block";
   setTimeout(() => {
-    popUP = true
-    console.log(popUP)
-  }, );
-
+    popUP = true;
+    console.log(popUP);
+  });
 });
-console.log(modal.style.display === "block")
-
+console.log(modal.style.display === "block");
 
 // if clicked outsite of the pop-up then it will be disappeared
 
@@ -139,9 +137,7 @@ activeCard.forEach((el, index) => {
       activeCard[1].style.backgroundColor = "#F6F6F6";
       activeCard[2].style.backgroundColor = "#F6F6F6";
     } else if (index === 1) {
-      projectImg.src =
-        " projectImg.src =
-        "./assets/lastbigimg.png";";
+      projectImg.src = "./assets/lastbigimg.png";
       activeCard[1].style.backgroundColor = "#FF3147";
       activeCard[0].style.backgroundColor = "#F6F6F6";
       activeCard[2].style.backgroundColor = "#F6F6F6";
@@ -156,19 +152,28 @@ activeCard.forEach((el, index) => {
 });
 
 // Adjust image width in portrait mode
-if (isPortrait) {
-  console.log(isPortrait);
-  projectImg.style.width = "380px";
+const fixingImg = function(){
+    console.log('started')
+    if (isPortrait) {
+        console.log('entered')
+        console.log(isPortrait);
+        projectImg.style.width = "380px";
+        console.log('left')
+      }
+      console.log('ended')
 }
+
+window.addEventListener("load", fixingImg);
 
 // Log the project image width
 console.log(projectImg.style.width);
 window.onclick = function (event) {
-    if (popUP) {
-        modal.style.display = "none";
-        popUP = false
-      }
-}
-  console.log(modal.style.display === "block")
+  if (popUP) {
+    modal.style.display = "none";
+    popUP = false;
+  }
+};
+console.log(modal.style.display === "block");
+
 
   
